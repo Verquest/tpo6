@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="log4j-core-2.17.2">
+    <CLASSES>
+      <root url="jar://E:/ActiveMQ/apache-activemq-5.17.1/lib/optional/log4j-core-2.17.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
