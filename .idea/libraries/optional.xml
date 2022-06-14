@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="optional">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/apache-activemq-5.17.1/lib/optional/activemq-log4j-appender-5.17.1.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/apache-activemq-5.17.1/lib/optional/log4j-core-2.17.2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/apache-activemq-5.17.1/lib/optional/log4j-api-2.17.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -11,18 +11,19 @@ import java.util.Hashtable;
 
 public class Chat {
     private static ChatWindow window;
-    public static void main(String[] args) throws InterruptedException, NamingException, JMSException {
+    public static void main(String[] args) throws InterruptedException, JMSException {
         window = new ChatWindow();
         while(window.user.equals("")){
             Thread.sleep(50);
         }
         String name = window.user;
-        Context context = new InitialContext();
-        ActiveMQConnectionFactory factory= new ActiveMQConnectionFactory("vm://localhost");
+
+
+        ActiveMQConnectionFactory factory= new ActiveMQConnectionFactory("tcp://localhost:61616");
         Connection connection = factory.createConnection();
         connection.start();
-        //Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        Destination destination = (Destination) context.lookup("topic1");
+        Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+        Destination destination = session.createTopic("topic1");
 
         try {
             Connect(destination, connection);

@@ -18,7 +18,7 @@ public class ChatWindow extends JFrame {
     public LinkedList<String> messagesToBeProcessed;
     public ChatWindow(){
         messagesToBeProcessed = new LinkedList<>();
-
+        this.setName("Chat");
         this.setPreferredSize(new Dimension(W, H));
         sendButton = new JButton("send message");
         sendButton.addActionListener(action -> getMessage());
